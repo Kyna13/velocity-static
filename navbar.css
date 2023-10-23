@@ -118,16 +118,16 @@ nav{
   margin: 0 auto;
 }
 .simg1{
-  background-image: url("../images/discord.png");
+  background-image: url("./discord.png");
 }
 .simg2{
-  background-image: url("../images/insta.png");
+  background-image: url("./insta.png");
 }
 .simg3{
-  background-image: url("../images/mail.png");
+  background-image: url("./mail.png");
 }
 .simg4{
-  background-image: url("../images/whatsapp.png");
+  background-image: url("./whatsapp.png");
   height: 12vw;
   margin-top: 0.5vw;
   width: 13vw;
