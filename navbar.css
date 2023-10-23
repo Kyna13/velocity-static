@@ -1,3 +1,29 @@
+
+@font-face {
+  font-family: 'Aspekta';
+  src: url('./fonts/Main\ font/Aspekta-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanson';
+  src: url('./fonts/Headline\ Font/Hanson-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Breathe Fire';
+  src: url('./fonts/Theme\ Accent\ Font/BreatheFireIi-2z9W.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Aspekta';
+}
+
 nav{
   background-color: #0A0A0A;
 }
@@ -35,15 +61,14 @@ nav{
   text-align: left;
 }
 .nav-left{
-  font-family: Breathe Fire II;
-  font-family: 'MuseoModerno', sans-serif;
+  font-family: 'Breathe Fire';
   font-size: 27px;
   font-weight: 400;
   border-right: 3px #fff solid;
   padding-right: 20px;
 }
 .nav-right{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Aspekta';
   font-size: 25px;
   font-weight: 600;
   display: flex;
@@ -53,7 +78,7 @@ nav{
 
 
 .footer-title{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Hanson';
   font-size: 50px;
   font-weight: 700;
   line-height: 52px;
@@ -70,18 +95,19 @@ nav{
   width: 20vw;
   height: 20vw;
   padding: 30px;
-  background-color: #fff;
-  border: 0px #000 solid;
+  background-color: #0A0A0A;
+  border: 5px #fff solid;
   border-radius: 30px;
+  text-decoration: none;
 }
 .social-name{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Breathe Fire';
   font-size: 30px;
   font-weight: 700;
   line-height: 34px;
   letter-spacing: 0em;
   text-align: center;
-  color: #000;
+  color: #fff;
 }
 .social-img{
   height: 13vw;
@@ -92,16 +118,16 @@ nav{
   margin: 0 auto;
 }
 .simg1{
-  background-image: url("./discord.png");
+  background-image: url("../images/discord.png");
 }
 .simg2{
-  background-image: url("./insta.png");
+  background-image: url("../images/insta.png");
 }
 .simg3{
-  background-image: url("./mail.png");
+  background-image: url("../images/mail.png");
 }
 .simg4{
-  background-image: url("./whatsapp.png");
+  background-image: url("../images/whatsapp.png");
   height: 12vw;
   margin-top: 0.5vw;
   width: 13vw;
