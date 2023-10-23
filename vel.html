@@ -15,11 +15,13 @@
       body {
           font-family: 'Aspetka', sans-serif !important;
       }
+      .overflow-hidden::-webkit-scrollbar {
+            width: 0;
+        }
 
-      #popup {
-          width: 75vw;
-          margin: 0 auto;
-      }
+        .overflow-hidden {
+            scrollbar-width: none;
+        }
   </style>
     <link rel="stylesheet" src="style.css" />
     <script src="https://cdn.tailwindcss.com/"></script>
@@ -115,7 +117,7 @@
       </div>
     </div>
     <div
-    class="fixed inset-0 flex items-center justify-center bg-opacity-50 p-4 backdrop-blur-md rounded-3xl z-50"
+    class="fixed inset-0 flex items-center justify-center bg-opacity-50 p-4 overflow-hidden overflow-y-auto backdrop-blur-md rounded-3xl z-50"
     id="popup"
   >
     <div class="bg-black p-8 rounded-3xl shadow-lg text-purple-700">
@@ -233,7 +235,7 @@
           <h3 class="font-semibold mt-4 justify-center text-center pb-5">
             Password
           </h3>
-          <div class="mb-4 flex-1 flex flex-row">
+          <div class="mb-4 flex flex-col">
             <input
               type="password"
               id="password"
@@ -381,7 +383,6 @@
 const openRegistrationPopupButton = document.getElementById("RegisterPopup");
 const closeRegistrationPopupButton = document.getElementById("Submit");
 const registrationPopup = document.getElementById("popup");
-registrationPopup.style.display = "none";
 
 openRegistrationPopupButton.addEventListener("click", () => {
   registrationPopup.style.display = "block";
